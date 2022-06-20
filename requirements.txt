@@ -1,0 +1,6 @@
+dvc
+sklearn
+pandas
+matplotlib
+seaborn 
+Flask
