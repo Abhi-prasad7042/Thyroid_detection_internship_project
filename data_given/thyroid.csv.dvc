@@ -1,0 +1,4 @@
+outs:
+- md5: 9cd4416047fb91c60beee335f0be9b01
+  size: 222446
+  path: thyroid.csv
