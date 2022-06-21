@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/thyroid.csv
+      md5: 9cd4416047fb91c60beee335f0be9b01
+      size: 222446
+    - path: src/get_data.py
+      md5: a3d4cef6d27e9cbb4b3fc8eca5603793
+      size: 1281
+    - path: src/load_data.py
+      md5: 2f7752896bb8349610667d507c8701b9
+      size: 2957
+    outs:
+    - path: data/raw/dataset.csv
+      md5: 07d2f595e3884870f65fc6dc21a506ce
+      size: 491381
