@@ -7,3 +7,12 @@ stages:
     - data_given/thyroid.csv
     outs:
     - data/raw/dataset.csv
+
+  split_data:
+    cmd: python src/split_data.py --config=params.yaml
+    deps:
+    - src/split_data.py
+    - data/raw/dataset.csv
+    outs:
+    - data/processed/test_dataset.csv
+    - data/processed/train_dataset.csv
